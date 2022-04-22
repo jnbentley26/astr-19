@@ -1,0 +1,16 @@
+#This program will write a short introduction
+
+
+#This function tells the computer to print my Intro
+def PrintIntro():
+	print("My Name is John Bentley. I go by He/Him pronouns. My favorite movie is Waves and my favorite food is thai fried rice.")
+
+
+#This defines our main() function for our program
+def main():
+	PrintIntro()
+
+
+#When we run the program this executes first
+if __name__ == '__main__':
+	main()
