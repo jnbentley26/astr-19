@@ -1,0 +1,19 @@
+#Imports numpy so we can use it
+import numpy as np
+
+#Defines the floating points
+x = 1.5
+y = 2.5
+
+#Defines the integers
+a = 1
+b = 2
+
+#Prints the sum of floating points x and y
+print("x+y = ", x+y)
+
+#Prints the difference of integers a and b
+print("b-a = ", b-a)
+
+#Prints teh product of a floating point number, x, and an integer, b. 
+print("x*b = ", x*b)
