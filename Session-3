@@ -1,0 +1,16 @@
+def main():
+
+    x = 9
+    y = x**3 + 8
+
+    if(y > 27):
+        print("YAY!")
+    else:
+        print(y)
+
+
+
+
+#When we run the program this executes first
+if __name__ == '__main__':
+	main()
