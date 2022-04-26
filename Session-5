@@ -2,10 +2,10 @@ import matplotlib.pyplot as plt
 import numpy as np
 %matplotlib inline
 
-sinx = np.arange(0, 2*np.pi, 0.1)
+sinx = np.arange(0, 2*np.pi, 0.001)
 siny = np.sin(sinx)
 
-x = np.arange(0, 2*np.pi, 0.1)
+x = np.arange(0, 2*np.pi, 0.001)
 y = x
 
 def table():
