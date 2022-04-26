@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
+%matplotlib inline
 
 sinx = np.arange(0, 2*np.pi, 0.1)
 siny = np.sin(sinx)
