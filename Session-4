@@ -1,9 +1,15 @@
+#this sets the class as parrot as well as
+#the parrots different features it also sets
+#the values which a parrot has, 2 eyes, legs 
+#2 units long and a tail
 class Parrot:
     def __init__(self, lengthlegs = 2.0, eyes = 2, tail = True):
         self.lengthlegs = lengthlegs
         self.eyes = eyes
         self.tail = tail
-
+#if these conditions are true then it will
+#print that the parrot had a tail, if not
+#it will print that it has no tail
     def __str__(self):
         if(self.tail == True):
             return f'My favorite animal is a parrot. It has {self.eyes} eyes and the length of the legs are {self.lengthlegs} units. It has a tail.'
