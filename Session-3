@@ -1,8 +1,13 @@
+#this defines the function
 def main():
 
+#this gives us our initial x value and our function 
+#for the increase
     x = 9
     y = x**3 + 8
 
+#this prints "YAY!" If the value of our fucntion 
+#exceeds 27, if it does not it will not print
     if(y > 27):
         print("YAY!")
     else:
