@@ -4,23 +4,27 @@
   {
    "cell_type": "code",
    "execution_count": 1,
-   "id": "cf97a601",
+   "id": "2831dc7b",
    "metadata": {},
    "outputs": [],
    "source": [
+    "#this imports numpy and matplotlib so we can use their libraries\n",
     "import numpy as np\n",
     "import matplotlib.pyplot as plt\n",
     "\n",
+    "#this allows jupyter to produce the images\n",
     "%matplotlib inline\n",
     "\n",
+    "#this sets the boundaires for x and gives us 1000 points\n",
     "x = np.arange(0, 2*np.pi, 0.001)\n",
+    "#defines sinx and cosx\n",
     "sinx = np.sin(x)\n",
     "cosx = np.cos(x)"
    ]
   },
   {
    "cell_type": "markdown",
-   "id": "eb241238",
+   "id": "c00f2b1c",
    "metadata": {},
    "source": [
     "line 1-2 imports numpy and matplotlib so we can use their libraries\n",
@@ -31,8 +35,8 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 3,
-   "id": "186f2daa",
+   "execution_count": 2,
+   "id": "8b0b1a08",
    "metadata": {},
    "outputs": [
     {
@@ -49,14 +53,15 @@
     }
    ],
    "source": [
+    "#this plots and shows the graph\n",
     "plt.plot(x,sinx,x,cosx)\n",
     "plt.show()"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 21,
-   "id": "5f5bcc55",
+   "execution_count": 5,
+   "id": "8a667fbf",
    "metadata": {},
    "outputs": [
     {
@@ -73,32 +78,34 @@
     }
    ],
    "source": [
+    "#this section creates the lists\n",
     "fig, ax = plt.subplots(1,1)\n",
     "x_values = []\n",
     "sinx_values = []\n",
     "cosx_values = []\n",
     "all_values = []\n",
     "\n",
+    "#this loops and appends all of the values previosuly to the lists\n",
     "for i in range(10):\n",
     "    x_values.append(i)\n",
-    "\n",
-    "for j in range(10):\n",
-    "    sinx_values.append(sinx[j])\n",
+    "    sinx_values.append(sinx[i])\n",
+    "    cosx_values.append(cosx[i])\n",
     "    \n",
-    "for k in range(10):\n",
-    "    cosx_values.append(cosx[k])\n",
-    "\n",
+    "#the x list values sinx list values and cosx list values are moved into one list\n",
     "all_values.append(x_values)\n",
     "all_values.append(sinx_values)\n",
     "all_values.append(cosx_values)\n",
     "\n",
+    "#list converted to an np array\n",
     "numpy_values = np.array(all_values)\n",
+    "#this calls the shape of the list which would be (3, 10)\n",
     "numpy_values.shape\n",
     "\n",
+    "#this changes it to (10, 3)\n",
     "numpy_trans = np.transpose(numpy_values)\n",
     "numpy_trans.shape\n",
     "\n",
-    "column_labels = [\"x\", \"sin(x)\", \"cos(x)\"]\n",
+    "#turns axis \n",
     "ax.axis('tight')\n",
     "ax.axis('off')\n",
     "ax.table(cellText = numpy_trans, colLabels = ['x','sin(x)','cos(x)'], loc = 'center')\n",
@@ -111,7 +118,23 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "c09a09ea",
+   "id": "ee347d8b",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "3bf5fcc8",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "2316eccd",
    "metadata": {},
    "outputs": [],
    "source": []
