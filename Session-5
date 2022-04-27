@@ -1,19 +1,26 @@
+#this imports matplotlib and numpy so we can
+#use their libraries, matplotlib inline formats 
+#it for Jupyter notebook
 import matplotlib.pyplot as plt
 import numpy as np
 %matplotlib inline
 
+#this sets the bounds and defines sinx and siny
 sinx = np.arange(0, 2*np.pi, 0.001)
 siny = np.sin(sinx)
 
+#this defines x and y and gives us 1000 data points
 x = np.arange(0, 2*np.pi, 0.001)
 y = x
 
+#this puts these points to a table
 def table():
     plt.plot(sinx,siny,x,y)
     plt.show()
-    
+ 
+#this defines the main function   
 def main():
     table()
-    
+#the function starts here    
 if __name__ == "__main__":
     main()
