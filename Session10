@@ -1,0 +1,7 @@
+import matplotlib.pyplot as plt
+import numpy as py
+import 
+%matplotlib inline
+rng = np.random.default_rng(seed=42)
+arr2 = rng.random(1000)
+plt.hist(arr2,100)
